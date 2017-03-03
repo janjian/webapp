@@ -1,0 +1,249 @@
+/* CSS Document */
+@charset "utf-8";
+/*全局*/
+h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, form, button, input, textarea, fieldset ,legend{margin:0;padding:0}
+h1, h2, h3, h4, h5, h6, button, input, select, textarea{font-size:100%}
+body {margin: 0;padding: 0;font-size:100%;color: #333;  font-family:"Microsoft YaHei", "微软雅黑", "宋体", Arial, Helvetica, sans-serif; background-color: #EDEDED}
+@media only screen and (max-width: 1920px) { body{ font-size:38px; }}
+@media only screen and (max-width: 1336px) { body{ font-size:36px; }}
+@media only screen and (max-width: 1280px) { body{ font-size:34px; }}
+@media only screen and (max-width: 1024px) { body{ font-size:32px; }}
+@media only screen and (max-width: 828px) { body{ font-size:28px; }}
+@media only screen and (max-width: 768px) { body{ font-size:28px; }}
+@media only screen and (max-width: 750px) { body{ font-size:28px; }}
+@media only screen and (max-width: 720px) { body{ font-size:24px; }}
+@media only screen and (max-width: 640px) { body{ font-size:20px; }}
+@media only screen and (max-width: 480px) { body{ font-size:14px; }}
+@media only screen and (max-width: 320px) { body{ font-size:12px; }}
+@media only screen and (max-width: 300px) { body{ font-size:12px; }}
+a:link{color: #333;text-decoration: none;}
+
+ul, li {padding: 0;margin: 0;list-style: none;}
+dl, dt, dd {margin: 0;padding: 0;}
+img {border: 0;}
+.clr{ clear:both}
+/*清除浮动*/
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+div
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+/*==============================================================================*/
+/*咨询
+/*==============================================================================*/
+
+.banner {width:100%;margin:0 auto;padding:0;background-color:#151515;}
+#scroller {height:auto;float:left;padding:0;}
+#scroller ul {list-style:none;display:block;float:left;width:100%;height:auto;padding:0;margin:0;text-align:left;}
+#scroller li {display:block; float:left;width:auto; height:auto;text-align:center;font-size:0px;padding:0;position:relative;}
+#scroller li a{display:block;padding:0;margin:0;}
+#scroller li p{position:absolute;z-index:2;display:block;width:100%;bottom:0;background-color:rgba(0, 0, 0, 0.5);color:#F4F4F4;font-size:14px;text-indent: 55px;line-height:24px;text-align: left;text-indent: 10px;text-overflow: ellipsis; white-space: nowrap;padding:0;margin:0;padding:5px 0;}
+.nav {float: right; margin-top: -25px;padding: 0;position: relative;width: auto;z-index: 3;}
+#indicator > li {display:block; float:left;list-style:none;padding:0; margin:0;}
+#indicator {display: block;margin: 0; padding: 0;width: auto;}
+#indicator > li {
+	text-indent:-9999em;
+	width:8px; height:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	background:#888;
+	overflow:hidden;
+	margin-right:4px;
+}
+#indicator > li.active {background:#196ed2;}
+#indicator > li:last-child {margin:0 8px 0 0;}
+
+/*==============================================================================*/
+/*公告
+/*==============================================================================*/
+.tabslider{width:94%; padding:3%;}
+
+.tabslider li a:link{color:#333333;}/* 未访问的链接 */
+.tabslider li a:visited{color:#ccc;}/* 已访问的链接 */
+.tabslider li a:hover{color:#3388cc;}/* 当有鼠标悬停在链接上 */
+
+.tabslider li span,.tabslider .hidden div span{display:block;width:100%;color:#C5C5C5;text-align:right;font-size:0.875em; padding:1% 0;}
+.tabslider li{padding:3% 0;border-bottom:solid 1px #EFEFEF;}
+/*==============================================================================*/
+/*HEADER
+/*==============================================================================*/
+.header{ width:100%; height:auto;background:#308dea; padding:2% 3% 2% 3%;text-align:center; color:#FFFFFF; z-index:999; position: fixed; line-height: 130%}
+.page_title{ float:left; width:75%; text-align:center; font-size:150%; padding-top:2%}
+a.back_button{ float:left;color:#c5c5c5; font-weight:bold; margin-top:2%}
+a#menu_open{ float:right;color:#c5c5c5; font-weight:bold;}
+.clear{ clear:both}
+/*==============================================================================*/
+/*文字字体大小
+/*==============================================================================*/
+.textAa{ display:inline-block; float:right; width:20%; margin-top:1%}
+.fontSize{ background:#fff; padding:2%; float:right}
+.smallSize{background:#308dea; color:#fff; text-align:center; float:right;padding:4px 10px;font-size:80%;}
+.smalA{text-align:center; float:right;  text-decoration:none;padding:4px 10px; font-size:80%}
+.bigSize{background:#308dea; color:#fff; text-align:center; float:left; padding:3.5px 10px;}
+.bigA{text-align:center;  float:left;text-decoration:none;padding:3.5px 10px;}
+.ggNeirong{ width:100%; padding:12% 3% 3% 3%;}
+.gg_title{ border-bottom:1px #ccc solid; padding-bottom:2%; color:#333333; }
+.ggNeirong .gg_title h1{ line-height:140%; font-weight:normal; font-size:130%}
+.gg_title span{display:block; padding:1% 0; font-size:90%; color:#666;}
+.gg_texgt{line-height:140%;}
+.gg_texgt p{line-height:200%; padding:1.5% 0;}
+
+/*==============================================================================*/
+/*新闻
+/*==============================================================================*/
+.ColorBG_blue{ font-style:normal; float:left; font-size:70%; background:#0864b7; padding:0.3% 0.5%; text-align:center; color:#fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+.ColorBG_red{font-style:normal; float:left; font-size:70%; background:#fb1717; padding:0.3% 0.5%; text-align:center; color:#fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+.newName{ float:left;font-style:normal; margin-right:3%;}
+
+/*==============================================================================*/
+/*标题
+/*==============================================================================*/
+.title {font-style: normal;float: left;font-size:110%;padding:3% 2% 0.3% 2%;width: 100%;}
+.title a {position: relative; float: right;font-size:60%;padding:1% 2% 0% 2%}
+.title img {width: 6%;padding-right: 1%;vertical-align: text-bottom;}
+/*==============================================================================*/
+/*内容1
+/*==============================================================================*/
+.topic {width:100%; padding:0;float: left;}
+.topic li{font-size:90%;padding:3% 2%;border-bottom:solid 1px #EFEFEF;background:#E5E5E5;}
+.topic img{width: 20%;float: right;padding:0 1%;}
+.topic span {font-size: 110%;font-weight: bold;}
+/*==============================================================================*/
+/*内容2
+/*==============================================================================*/
+.topic2 {width:100%; padding:0;float: left;}
+.topic2 li{font-size:90%;padding:4.5% 2%;border-bottom:solid 1px #EFEFEF;background:#E5E5E5;}
+.topic2 li p {padding:0 14%;}
+.avatar {width: 10%;float: left; border-radius:50%; overflow:hidden;padding:0 1%;}
+.topic2 span {font-size: 40%;padding: 0 3%}
+.voice {width: 80%;}
+.picture {width: 30%; padding: 1% 1% 0 0;}
+/*==============================================================================*/
+/*图标
+/*==============================================================================*/
+button {font-size: 40%;margin:0 42%;}
+/*==============================================================================*/
+/*评论
+/*==============================================================================*/
+#time4 {font-size: 110%;float: right;padding: 0 1% 0 0%;}
+.ju{width: 3.5%;position: relative;float: right;top: 2px;padding-left: 1%;padding-right: 1%}
+/*==============================================================================*/
+/*点赞
+/*==============================================================================*/
+.heart {width: 6%;position: relative;float: right;bottom: 4px}
+#time1 {font-size: 110%;float: right;padding: 0 1% 0 0%;color: #DB7093;}
+#time2 {font-size: 110%;float: right;padding: 0 1% 0 0%;color: #DB7093;}
+#time3 {font-size: 110%;float: right;padding: 0 1% 0 0%;color: #DB7093;}
+/*
+/*lable
+*/
+
+#label01:checked ~ #content li:nth-child(1) {
+  display:block;
+}
+
+#label02:checked ~ #content li:nth-child(2) {
+  display:block;
+}
+
+
+/* 其他则设置为隐藏*/
+
+#label01:checked ~ #content li:nth-child(n+2) {
+  display:none;
+}
+
+#label02:checked ~ #content li:nth-child(1),
+#label02:checked ~ #content li:nth-child(3) {
+  display:none;
+}
+
+
+/* 隐藏Input按钮，它只是跳板嘛*/
+#label01, #label02 {
+  display:none;
+}
+
+
+
+
+.bg1 {
+  background: #EDEDED;
+}
+
+.bg2 {
+  background: #EDEDED;
+}
+
+
+#tab {
+  width:100%;
+  height: 100%;
+  margin:30px auto;
+  overflow:hidden;
+}
+
+#opt {
+  width:100%;
+  height:40px;
+}
+
+#opt label {
+  float:left;
+  width:50%;
+  height:100%;
+  text-align:center;
+  font:18px/40px MicroSoft YaiHei;
+	border-bottom:1px solid #b5bfdc;
+	color: #989898;
+  cursor:pointer;
+}
+
+#content {
+  width:100%;
+}
+
+#content li {
+  float:left;
+  width:100%;
+  height:100%;
+}
+/*
+/*收藏
+*/
+.title1 {font-style: normal;float: left;font-size:110%;padding:3% 2% 2% 2%;width: 100%;background-color: #E5E5E5;}
+.title1 a {position: relative; float: right;font-size:60%;padding:1% 2% 0% 2%}
+.title1 img {width: 6%;padding-right: 3%;vertical-align: text-bottom;}
+#p2 {width: 45%;float: left;padding: 1% 0 1% 2%}
+
+#body2{background-color: #EDEDED;}
+#t1{border-top: 3px solid #DCDCDC;border-top: 2px solid #D0D0D0;border-top: 3px solid #E7E7E7;border-top: 8px solid #EDEDED;border-bottom:8px solid #EDEDED;}
+#t2{border-bottom:2px solid #E6E6E6;border-bottom:2px solid #EAEAEA;}
+
+
+#tx {width: 25%;border-radius:50%; overflow:hidden;position: absolute;top: 22%;left: 9%;}
+#tx2 {width: 8%;position: absolute;top: 55%;left: 26%;}
+
+/*
+/*bus
+*/
+.bustitle {font-size: 200%;padding: 2% 0 3% 0;border-bottom:2px solid #E6E6E6;border-bottom:2px solid #B9B9B9;}
+.bustitle span {float: left;padding: 0.5% 3% 3% 3%}
+
+.list li {font-size: 120%;padding: 3% 0 3% 2.5%;border-bottom:2px solid #E6E6E6;border-bottom:2px solid #B9B9B9;}
+.list span {float: right;padding-right: 2.5%}

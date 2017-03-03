@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>英语角</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/sytle.css">
+
+</head>
+<body>
+<div class="Newsinfo">
+<div class="banner">
+<div id="qiehuan">
+<div id="scroller">
+</div>
+</div>
+<script>
+var myScroll;
+var count = document.getElementById("thelist").getElementsByTagName("img").length;
+
+var count2 = document.getElementsByClassName("menuimg").length;
+document.ready = function(){
+for(i=0;i<count;i++){
+ document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+}
+window.onresize = function(){
+for(i=0;i<count;i++){
+document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+ document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+}
+
+</script>
+</div>
+
+<div class="topic2">
+  <ul>
+    <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+    </p></a>
+    <span id="time4" >27</span><img class ="ju"  src="images/icon2.png" alt="ju">
+    <span id="time1" >1</span><img class ="heart" id="h1" onclick="changedis1()" src="images/heart_2.png" alt="heart">
+    </li>
+    <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+        <img class="voice"src="images/p3.png" alt="1"></p></a>
+        <span id="time4" >15</span><img class ="ju"  src="images/icon2.png" alt="ju">
+        <span id="time2" >20</span><img class ="heart" id="h2" onclick="changedis2()" src="images/heart_2.png" alt="heart">
+
+      </li>
+    <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖<br>
+        <img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"></p></a>
+        <span id="time4" >8</span><img class ="ju"  src="images/icon2.png" alt="ju">
+        <span id="time3" >10</span><img class ="heart" id="h3" onclick="changedis()" src="images/heart_2.png" alt="heart">
+      </li>
+
+      <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+      </p></a>
+      <span id="time4" >27</span><img class ="ju"  src="images/icon2.png" alt="ju">
+      <span id="time1" >1</span><img class ="heart" id="h1" onclick="changedis1()" src="images/heart_2.png" alt="heart">
+      </li>
+      <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+          <img class="voice"src="images/p3.png" alt="1"></p></a>
+          <span id="time4" >15</span><img class ="ju"  src="images/icon2.png" alt="ju">
+          <span id="time2" >20</span><img class ="heart" id="h2" onclick="changedis2()" src="images/heart_2.png" alt="heart">
+        </li>
+      <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖<br>
+          <img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"></p></a>
+          <span id="time4" >8</span><img class ="ju"  src="images/icon2.png" alt="ju">
+          <span id="time3" >10</span><img class ="heart" id="h3" onclick="changedis()" src="images/heart_2.png" alt="heart">
+        </li>
+
+        <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+        </p></a>
+        <span id="time4" >27</span><img class ="ju"  src="images/icon2.png" alt="ju">
+        <span id="time1" >1</span><img class ="heart" id="h1" onclick="changedis1()" src="images/heart_2.png" alt="heart">
+        </li>
+        <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖
+            <img class="voice"src="images/p3.png" alt="1"></p></a>
+            <span id="time4" >15</span><img class ="ju"  src="images/icon2.png" alt="ju">
+            <span id="time2" >20</span><img class ="heart" id="h2" onclick="changedis2()" src="images/heart_2.png" alt="heart">
+          </li>
+        <li><a href=""><img class="avatar" src="images/head1.png" alt="1"><span>3mins ago</span><br><p>六个单词 六个单词一句话，道尽一生冷暖<br>
+            <img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"><img class="picture"src="images/banner_2.jpg" alt="1"></p></a>
+            <span id="time4" >8</span><img class ="ju"  src="images/icon2.png" alt="ju">
+            <span id="time3" >10</span><img class ="heart" id="h3" onclick="changedis()" src="images/heart_2.png" alt="heart">
+          </li>
+  </ul>
+</body>
+</html>

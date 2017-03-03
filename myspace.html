@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>个人中心</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/sytle.css">
+
+</head>
+<body id="body2">
+<div class="Newsinfo">
+<div class="banner">
+<div id="qiehuan">
+<div id="scroller">
+<ul id="thelist">
+<li><img id="tx" src="images/head1.png"/><img id="tx2" src="images/icon9.png"/> <img src="images/banner_2.jpg"/></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+var myScroll;
+var count = document.getElementById("thelist").getElementsByTagName("img").length;
+
+var count2 = document.getElementsByClassName("menuimg").length;
+document.ready = function(){
+for(i=2;i<count;i++){
+ document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+}
+window.onresize = function(){
+for(i=2;i<count;i++){
+document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+ document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+}
+
+</script>
+
+</div>
+<div id="tab">
+  <input type="radio" checked="checked" name="tab" id="label01" />
+  <input type="radio" name="tab" id="label02" />
+
+  <div id="opt">
+    <label class="bg1" for="label01">我的汉语角</label>
+    <label class="bg2" for="label02">我的下载</label>
+  </div>
+
+  <ul id="content">
+    <li class="bg1">
+
+      <div id="t1" class="title1">
+      <p><img src="images/icon5.png" alt="icon3">收藏<a href="more.html">更多 > </a></p>
+      <img id="p2" src="images/banner_2.jpg"/>
+      <img id="p2" src="images/banner_2.jpg"/>
+      </div>
+
+      <div id="t2"class="title1">
+      <p><img src="images/icon6.png" alt="icon3">提问<a href="more.html"> > </a></p>
+      </div>
+
+      <div class="title1">
+      <p><img src="images/icon7.png" alt="icon4">评论<a href="more1.html"> ></a></p>
+    </div></li>
+    <li class="bg2"></li>
+  </ul>
+</div>
+
+
+</body>
+</html>
